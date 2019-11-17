@@ -1,0 +1,16 @@
+https://www.hackerearth.com/fr/practice/algorithms/sorting/bubble-sort/practice-problems/algorithm/sort-it-out/
+//Partially working 
+
+
+n = int(input())
+arr = list(map(int,input().split()))
+sort = arr[:]
+dicc = {}
+
+for i in range(n):
+	for j in range(n):
+		if sort[i]<=sort[j]:
+			sort[j],sort[i]=sort[i],sort[j]
+
+for i in range(n):
+	print(arr.index(sort[i]),'',end = '')
