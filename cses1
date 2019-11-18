@@ -1,7 +1,7 @@
 https://cses.fi/problemset/task/1621
 
 
-////test 5/6/7 failed 
+////test 5/6/7 failed due to time limit
 
 n = int(input())
 L = list(map(int,input().split()))
