@@ -1,0 +1,18 @@
+https://cses.fi/problemset/task/1621
+
+
+////test 5/6/7 failed 
+
+n = int(input())
+L = list(map(int,input().split()))
+M = []
+c = 0
+for i in range(n):
+	if L[i] not in M:
+		M.append(L[i])
+		c = c+1 
+print(c)
+
+//might print len(M)
+
+
