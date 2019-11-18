@@ -1,0 +1,15 @@
+https://codeforces.com/problemset/problem/1095/B
+
+#time exceeded on test 3
+
+n = int(input())
+L = list(map(int,input().split()))
+N=[]
+def instability(M):
+	   return (max(M)-min(M))
+
+for i in range(n):
+     M=L[:]
+	   M.remove(M[i])
+	   N.append(instability(M))
+print(min(N))
