@@ -1,0 +1,42 @@
+//Fully accepted
+//https://codeforces.com/problemset/problem/58/A
+
+ s = str(input())
+n = len(s)
+x=0
+for i in s:
+	if i == "h":
+		s=s[s.index(i)+1:]
+		
+		x +=1
+		break				
+for j in s:
+	if j=="e":
+		s=(s[s.index(j)+1:])
+		
+		x +=1
+		break
+for l in s:
+	if l=="l":
+		s=s[s.index(l)+1:]
+		
+		x +=1
+		break
+for e in s:
+	if e=="l":
+		s=s[s.index(e)+1:]
+		
+		x +=1
+		break
+for d in s:
+	if d=="o" and x==4:
+		print("YES")
+		break
+else:
+	print("NO")
+  
+
+										
+
+
+	
