@@ -1,4 +1,4 @@
-#not tested yet
+#accepted
 #https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2126
 
 n=int(input())
