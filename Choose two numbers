@@ -1,0 +1,16 @@
+#accepted
+#https://codeforces.com/contest/1206/problem/A
+
+n=int(input())
+N=list(map(int,input().split()))
+m=int(input())
+M=list(map(int,input().split()))
+find = False
+for i in N:
+	for j in M:
+		if (i+j in N) == False and (i+j in M)== False:
+			print(i,j)
+			find = True
+			break
+	if find == True:
+		break
