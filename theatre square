@@ -1,0 +1,18 @@
+L = list(map(int,input().split()))
+n=L[0]
+m=L[1]
+a=L[2]
+s=n*m
+a2=a*a
+q=s//a2
+if a2>=s:
+	print(1)
+
+elif n%a == 0 and m%a == 0:
+	print(q)
+elif n%a == 0 and m%a != 0:
+	print(q-m//a2+n//a)
+elif n%a != 0 and m%a == 0 :
+	print(q-n//a2+m//a)
+else:
+	print((n//a+1)*(m//a+1))
